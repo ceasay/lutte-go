@@ -12,7 +12,7 @@ RUN go mod tidy
 COPY . .
 
 # Copier le dossier "video" contenant la vidéo dans le conteneur
-COPY video /app/video
+#COPY video /app/video
 
 # Compiler l'application Go
 RUN go build -o main .
